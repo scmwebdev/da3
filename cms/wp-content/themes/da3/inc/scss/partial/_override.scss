@@ -1,0 +1,78 @@
+/* ===========================================
+ * Override Vendors CSS
+ * ===========================================*/
+
+/* 
+* make the arrow sits on top of the content and not on side
+* this fixes the extra width on the sides for the whole page
+*/
+.slick-slider {
+     margin-bottom: 0;
+}
+
+// fixed the gap after the slick slider !important
+.slick-slide {
+    height: auto;
+}
+.slick-prev,
+.slick-next {
+    z-index: 2;
+    // padding: 75px;
+    @media (max-width: 768px) {
+        display: none !important;
+    }
+}
+
+.slick-next {
+    position: absolute;
+    right: 0;
+    &:before {
+        // font-family: 'Glyphicons Halflings';
+        // content: '\e080';
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f138";
+        color: #000;
+        font-size: 30px;
+    }
+}
+
+.slick-prev {
+    left: 0;
+    position: absolute;
+    &:before {
+        // font-family: 'Glyphicons Halflings';
+        // content: '\e079';
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f137";
+        color: #000;
+        font-size: 30px;
+    }
+}
+.slick-dots {
+    bottom: 0;
+    margin-bottom: 20px;
+}
+.slick-dots li button {
+    color: #fff;
+}
+.slick-dots li button:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f111";
+    color: $secondary-color;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $main-color;
+}
+
+/* ---------------------------- */
+
+/* bootstrap override -- */
+
+// remove margin bottom from the navbar
+.navbar {
+    margin-bottom: 0;
+}
+

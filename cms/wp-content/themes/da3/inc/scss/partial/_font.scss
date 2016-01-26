@@ -1,0 +1,81 @@
+/* ===========================================
+ * Include all fonts
+ * ===========================================*/
+
+// declare font
+@include font-face(Gotham-Med, '../fonts/gotham-medium');
+@include font-face(Gotham-Light, '../fonts/gotham-light');
+@include font-face(Gotham-Bold, '../fonts/gotham-bold');
+@include font-face(Gotham-Thin, '../fonts/gotham-thin');
+@include font-face(Gotham, '../fonts/gotham-book');
+
+/*size--*/
+$base-font-size: 15;
+
+html * {
+    font-size: $base-font-size + px;
+    h1 {
+        font-size: pxtoem($base-font-size + 28);
+    }
+    h2 {
+        font-size: pxtoem($base-font-size + 22);
+    }
+    h3 {
+        font-size: pxtoem($base-font-size + 16);
+    }
+    h4 {
+        font-size: pxtoem($base-font-size + 10);
+    }
+    h5 {
+        font-size: pxtoem($base-font-size + 4);
+    }
+    h6 {
+        font-size: pxtoem($base-font-size - 10);
+    }
+    h7 {
+        font-size: pxtoem($base-font-size - 4);
+    }
+    h8 {
+        font-size: pxtoem($base-font-size -6);
+    }
+    p,
+    span {
+        font-size: pxtoem($base-font-size);
+    }
+    @include breakpoint('xs') {
+        font-size: $base-font-size - 3 + px;
+        h1 {
+            font-size: pxtoem($base-font-size + 28);
+        }
+        h2 {
+            font-size: pxtoem($base-font-size + 22);
+        }
+        h3 {
+            font-size: pxtoem($base-font-size + 16);
+        }
+        h4 {
+            font-size: pxtoem($base-font-size + 10);
+        }
+        h5 {
+            font-size: pxtoem($base-font-size + 4);
+        }
+        h6 {
+            font-size: pxtoem($base-font-size - 10);
+        }
+        h7 {
+            font-size: pxtoem($base-font-size - 4);
+        }
+        h8 {
+            font-size: pxtoem($base-font-size -6);
+        }
+        p,
+        span {
+            font-size: pxtoem($base-font-size);
+        }
+    }
+}
+
+.smaller {
+    @extend .small;
+    font-size: 65%;
+}

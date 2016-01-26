@@ -6,3 +6,258 @@ Template:       dazzling
 
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
+/* ===========================================
+ * Import all in partials
+ * ===========================================*/
+/* ===========================================
+ * List of Variables
+ * ===========================================*/
+/*colors--*/
+/* ------------------- */
+/* ------------------- */
+/* *********************************** */
+/* Utility class */
+/* *********************************** */
+/* ------------------- */
+/* ------------------- */
+ul.nodots > li {
+  list-style-type: none !important; }
+
+.nopadding {
+  padding: 0 !important; }
+
+.nomargin {
+  margin: 0; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.inline {
+  display: inline; }
+
+.spacepad {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.spacemar {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.pos-relative {
+  position: relative; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.nomarginbottom {
+  margin-bottom: 0; }
+
+.bold {
+  font-weight: 700; }
+
+.visibility-hidden {
+  visibility: hidden; }
+
+.fullwidth {
+  width: 100%; }
+
+/* **************** Truncate Function CSS **************** */
+.truncate-text.collapsed .dot .more,
+.truncate-text.expanded .ad-text,
+.truncate-text.expanded .dot .less {
+  display: inline; }
+
+.truncate-text.collapsed .dot .less,
+.truncate-text.collapsed .ad-text,
+.truncate-text.expanded .dot .more {
+  display: none; }
+
+/* **************** /Truncate Function CSS **************** */
+/*use the nofloat if child(div) elements are float*/
+.vertical-align-nofloat > div,
+.vertical-align-nofloat > ul {
+  display: inline-block;
+  float: none !important;
+  vertical-align: middle; }
+
+/*move the all child of the div except the first child so that it can sit side by side*/
+.vertical-align-nofloat > div:not(first-child),
+.vertical-align-nofloat > ul:not(first-child) {
+  margin-left: -4px; }
+
+/* create skew object - it must have the correct html structure*/
+.skew-bg {
+  transform: skew(0, -3deg); }
+
+.skew-content {
+  transform: skew(0, 3deg); }
+
+/* ===========================================
+ * Include all fonts
+ * ===========================================*/
+@font-face {
+  font-family: "Gotham-Med";
+  src: url("../fonts/gotham-medium.eot?") format("eot"), url("../fonts/gotham-medium.woff2") format("woff2"), url("../fonts/gotham-medium.woff") format("woff"), url("../fonts/gotham-medium.ttf") format("truetype"), url("../fonts/gotham-medium.svg#Gotham-Med") format("svg"); }
+
+@font-face {
+  font-family: "Gotham-Light";
+  src: url("../fonts/gotham-light.eot?") format("eot"), url("../fonts/gotham-light.woff2") format("woff2"), url("../fonts/gotham-light.woff") format("woff"), url("../fonts/gotham-light.ttf") format("truetype"), url("../fonts/gotham-light.svg#Gotham-Light") format("svg"); }
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/gotham-bold.eot?") format("eot"), url("../fonts/gotham-bold.woff2") format("woff2"), url("../fonts/gotham-bold.woff") format("woff"), url("../fonts/gotham-bold.ttf") format("truetype"), url("../fonts/gotham-bold.svg#Gotham-Bold") format("svg"); }
+
+@font-face {
+  font-family: "Gotham-Thin";
+  src: url("../fonts/gotham-thin.eot?") format("eot"), url("../fonts/gotham-thin.woff2") format("woff2"), url("../fonts/gotham-thin.woff") format("woff"), url("../fonts/gotham-thin.ttf") format("truetype"), url("../fonts/gotham-thin.svg#Gotham-Thin") format("svg"); }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham-book.eot?") format("eot"), url("../fonts/gotham-book.woff2") format("woff2"), url("../fonts/gotham-book.woff") format("woff"), url("../fonts/gotham-book.ttf") format("truetype"), url("../fonts/gotham-book.svg#Gotham") format("svg"); }
+
+/*size--*/
+html * {
+  font-size: 15px; }
+  html * h1 {
+    font-size: 2.86667em; }
+  html * h2 {
+    font-size: 2.46667em; }
+  html * h3 {
+    font-size: 2.06667em; }
+  html * h4 {
+    font-size: 1.66667em; }
+  html * h5 {
+    font-size: 1.26667em; }
+  html * h6 {
+    font-size: 0.33333em; }
+  html * h7 {
+    font-size: 0.73333em; }
+  html * h8 {
+    font-size: 15 -6/"15"em; }
+  html * p,
+  html * span {
+    font-size: 1em; }
+  @media (max-width: 767px) {
+    html * {
+      font-size: 12px; }
+      html * h1 {
+        font-size: 2.86667em; }
+      html * h2 {
+        font-size: 2.46667em; }
+      html * h3 {
+        font-size: 2.06667em; }
+      html * h4 {
+        font-size: 1.66667em; }
+      html * h5 {
+        font-size: 1.26667em; }
+      html * h6 {
+        font-size: 0.33333em; }
+      html * h7 {
+        font-size: 0.73333em; }
+      html * h8 {
+        font-size: 15 -6/"15"em; }
+      html * p,
+      html * span {
+        font-size: 1em; } }
+
+.smaller {
+  font-size: 65%; }
+
+/* ===========================================
+ * Icons
+ * ===========================================*/
+/* ===========================================
+ * Override Vendors CSS
+ * ===========================================*/
+/* 
+* make the arrow sits on top of the content and not on side
+* this fixes the extra width on the sides for the whole page
+*/
+.slick-slider {
+  margin-bottom: 0; }
+
+.slick-slide {
+  height: auto; }
+
+.slick-prev,
+.slick-next {
+  z-index: 2; }
+  @media (max-width: 768px) {
+    .slick-prev,
+    .slick-next {
+      display: none !important; } }
+
+.slick-next {
+  position: absolute;
+  right: 0; }
+  .slick-next:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f138";
+    color: #000;
+    font-size: 30px; }
+
+.slick-prev {
+  left: 0;
+  position: absolute; }
+  .slick-prev:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f137";
+    color: #000;
+    font-size: 30px; }
+
+.slick-dots {
+  bottom: 0;
+  margin-bottom: 20px; }
+
+.slick-dots li button {
+  color: #fff; }
+
+.slick-dots li button:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f111";
+  color: #a01090;
+  opacity: 1;
+  font-size: 20px; }
+
+.slick-dots li.slick-active button:before {
+  color: #53094b; }
+
+/* ---------------------------- */
+/* bootstrap override -- */
+.navbar {
+  margin-bottom: 0; }
+
+/* ===========================================
+ * Header (logo & megamenu)
+ * ===========================================*/
+.navbar.navbar-default {
+  border: none; }
+
+.navbar-default .navbar-nav a {
+  font-weight: 700;
+  color: #53094b;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > .active a {
+    border: 2px solid #53094b;
+    background: #fff; }
+    .navbar-default .navbar-nav > .active a:focus, .navbar-default .navbar-nav > .active a:hover {
+      border: 2px solid #53094b;
+      background: #fff; } }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav > .active a {
+    background-color: #53094b;
+    color: #fff; } }
+
+@media (max-width: 767px) {
+  #logo {
+    padding-bottom: 10px; } }

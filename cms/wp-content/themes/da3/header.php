@@ -19,11 +19,11 @@
 
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<body <?php body_class('da3-page'); ?>>
+<div id="page" class="hfeed site da3">
 
 	<nav class="navbar navbar-default" role="navigation">
-		<div class="container-fluid">
+		<div class="container-fluid spacepad">
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 			    <span class="sr-only"><?php _e( 'Toggle navigation', 'dazzling' ); ?></span>
@@ -62,9 +62,18 @@
 		<?php dazzling_featured_slider(); ?>
 		<?php dazzling_call_for_action(); ?>
         </div>
+        	<?php 
+		if ( is_front_page() ) {	
+       		the_post_thumbnail('sparkling-featured', array( 'class' => 'img-responsive fullwidth'));
+		} else {
+			echo '<header class=""></header>';
+		}
+	?>
+
         <div id="content" class="site-content container">
             
-            <div class="container main-content-area"><?php
+            <div class="container main-content-area">
+            <?php
             
                 global $post;
                 if( get_post_meta($post->ID, 'site_layout', true) ){
