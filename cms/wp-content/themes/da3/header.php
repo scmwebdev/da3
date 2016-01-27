@@ -20,7 +20,7 @@
 </head>
 
 <body <?php body_class('da3-page'); ?>>
-<div id="page" class="hfeed site da3">
+<div id="page" class="hfeed site da3 da3-<?php echo strtolower(get_the_title()); ?>">
 
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid spacepad">
@@ -72,7 +72,7 @@
 
         <div id="content" class="site-content container">
             
-            <div class="container main-content-area">
+            <div class="<?php container(); ?> main-content-area">
             <?php
             
                 global $post;
@@ -86,5 +86,5 @@
                         $layout_class = of_get_option( 'site_layout' );
                 }
                 ?>
-                <div class="row <?php echo $layout_class; ?>">
+                <div class="<?php echo $layout_class; ?>">
                     

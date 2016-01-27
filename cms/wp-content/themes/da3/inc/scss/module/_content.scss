@@ -1,0 +1,47 @@
+/* ===========================================
+ * Content Template Part
+ * ===========================================*/
+
+.da3 {
+    &-home {
+        #content {
+            /* remove space between the main banner and the content area
+			on the homepage */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .header {
+            background-color: $main-color;
+            color: #fff;
+            position: relative;
+            @include spacepad(15px);
+        }
+    }
+}
+
+.da3-home .latest-post {
+    text-align: right;
+    .gem {
+        position: absolute;
+        left: -6em;
+        z-index: 2;
+        max-width: 100px;
+        top: 1em;
+    }
+    @include breakpoint('md') {
+        position: relative;
+        z-index: 2;
+        right: -3em;
+    }
+    .post-thumb {
+        img {
+            max-width: 450px;
+            @include breakpoint('xs') {
+            	@extend .img-responsive;
+            }
+        }
+    }
+    .post-link {
+        margin-top: 2em;
+    }
+}

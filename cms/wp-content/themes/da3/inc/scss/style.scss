@@ -7,5 +7,9 @@ Template:       dazzling
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
 
+/* setup base scss */
 @import 'partial/base';
+
+/* call in the modules */
 @import 'module/header';
+@import 'module/content';

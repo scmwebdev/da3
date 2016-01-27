@@ -28,3 +28,20 @@ function theme_js() {
 
 // enable featured image on pages/posts
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'home_post_thumb', 768, 600, true );
+
+function imgResponsive() {
+	if (wp_is_mobile()) {
+		return 'img-responsive';
+	} else {
+		return '';
+	}
+}
+
+function container() {
+	if (wp_is_mobile()) {
+		echo 'container-fluid';
+	} else {
+		echo 'container';
+	}
+}

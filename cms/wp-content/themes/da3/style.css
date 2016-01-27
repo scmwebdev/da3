@@ -6,6 +6,7 @@ Template:       dazzling
 
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
+/* setup base scss */
 /* ===========================================
  * Import all in partials
  * ===========================================*/
@@ -23,7 +24,9 @@ Template:       dazzling
 ul.nodots > li {
   list-style-type: none !important; }
 
-.nopadding {
+.nopadding, #primary,
+.site-content > .main-content-area,
+#content.container {
   padding: 0 !important; }
 
 .nomargin {
@@ -233,6 +236,7 @@ html * {
 .navbar {
   margin-bottom: 0; }
 
+/* call in the modules */
 /* ===========================================
  * Header (logo & megamenu)
  * ===========================================*/
@@ -242,8 +246,8 @@ html * {
 .navbar-default .navbar-nav a {
   font-weight: 700;
   color: #53094b;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  padding-top: 1px;
+  padding-bottom: 1px; }
 
 @media (min-width: 768px) {
   .navbar-default .navbar-nav > .active a {
@@ -261,3 +265,37 @@ html * {
 @media (max-width: 767px) {
   #logo {
     padding-bottom: 10px; } }
+
+/* ===========================================
+ * Content Template Part
+ * ===========================================*/
+.da3-home #content {
+  /* remove space between the main banner and the content area
+			on the homepage */
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.da3-home .header {
+  background-color: #53094b;
+  color: #fff;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.da3-home .latest-post {
+  text-align: right; }
+  .da3-home .latest-post .gem {
+    position: absolute;
+    left: -6em;
+    z-index: 2;
+    max-width: 100px;
+    top: 1em; }
+  @media (min-width: 992px) {
+    .da3-home .latest-post {
+      position: relative;
+      z-index: 2;
+      right: -3em; } }
+  .da3-home .latest-post .post-thumb img {
+    max-width: 450px; }
+  .da3-home .latest-post .post-link {
+    margin-top: 2em; }

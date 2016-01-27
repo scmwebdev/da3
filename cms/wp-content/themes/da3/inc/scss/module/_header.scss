@@ -12,8 +12,7 @@
         a {
             font-weight: 700;
             color: $main-color;
-            padding-top: 5px;
-            padding-bottom: 5px;
+			@include spacepad(1px);
         }
         > .active {
             @include breakpoint('sm') {
