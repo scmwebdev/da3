@@ -19,29 +19,3 @@
     }
 }
 
-.da3-home .latest-post {
-    text-align: right;
-    .gem {
-        position: absolute;
-        left: -6em;
-        z-index: 2;
-        max-width: 100px;
-        top: 1em;
-    }
-    @include breakpoint('md') {
-        position: relative;
-        z-index: 2;
-        right: -3em;
-    }
-    .post-thumb {
-        img {
-            max-width: 450px;
-            @include breakpoint('xs') {
-            	@extend .img-responsive;
-            }
-        }
-    }
-    .post-link {
-        margin-top: 2em;
-    }
-}

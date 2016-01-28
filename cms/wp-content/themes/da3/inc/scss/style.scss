@@ -7,9 +7,16 @@ Template:       dazzling
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
 
+/* vendors */
+@import '../node_modules/slick-carousel/slick/slick.scss';
+@import '../node_modules/slick-carousel/slick/slick-theme.scss';
+
 /* setup base scss */
 @import 'partial/base';
 
 /* call in the modules */
 @import 'module/header';
 @import 'module/content';
+
+/* pgae specific style */
+@import 'page/home';

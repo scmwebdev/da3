@@ -25,26 +25,28 @@
 
 .slick-next {
     position: absolute;
-    right: 0;
+    right: 25px;
+    width: 30px;
     &:before {
         // font-family: 'Glyphicons Halflings';
         // content: '\e080';
         font: normal normal normal 14px/1 FontAwesome;
         content: "\f138";
-        color: #000;
+        color: #fff;
         font-size: 30px;
     }
 }
 
 .slick-prev {
-    left: 0;
+    left: 25px;
     position: absolute;
+    width: 30px;
     &:before {
         // font-family: 'Glyphicons Halflings';
         // content: '\e079';
         font: normal normal normal 14px/1 FontAwesome;
         content: "\f137";
-        color: #000;
+        color: #fff;
         font-size: 30px;
     }
 }
@@ -58,13 +60,13 @@
 .slick-dots li button:before {
     font: normal normal normal 14px/1 FontAwesome;
     content: "\f111";
-    color: $secondary-color;
+    color: #main-color;
     opacity: 1;
     font-size: 20px;
 }
 
 .slick-dots li.slick-active button:before {
-    color: $main-color;
+    color: #fff;
 }
 
 /* ---------------------------- */

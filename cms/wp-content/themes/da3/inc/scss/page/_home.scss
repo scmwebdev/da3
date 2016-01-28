@@ -1,0 +1,95 @@
+/* ===========================================
+ * Home Template SCSS
+ * ===========================================*/
+
+.da3-home .gallery-post {
+    background: $secondary-color;
+    color: #fff;
+}
+
+.da3-home .video-audisi {
+    background: url(inc/img/da3_bg_gem.jpg);
+    color: #fff;
+}
+
+.gallery-post {
+    @include spacepad(15px);
+    position: relative;
+    @include breakpoint('sm') {
+        &-title {
+            position: relative;
+            margin-left: -2em;
+            img {
+                max-width: 400px;
+            }
+        }
+        &-photo {
+            img {
+                max-width: 250px;
+            }
+            .readmore {
+                @extend .spacemar;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.video-audisi {
+    @include spacepad(15px);
+    position: relative;
+    @include breakpoint('sm') {
+        &-title {
+            position: relative;
+            margin-top: -2em;
+            margin-right: 2em;
+            direction: rtl; //change direction right to left
+            img {
+                max-width: 400px;
+            }
+        }
+        .gem {
+            position: absolute;
+            z-index: 2;
+            left: -3em;
+            max-width: 150px;
+            top: 4em;
+            @extend .hide-xs;
+        }
+    }
+}
+
+.da3-home .latest-post {
+    text-align: right;
+    @include breakpoint('xs') {
+        .post-title,
+        .post-excerpt {
+            text-align: center;
+        }
+        .post-thumb {
+            margin: 10px 0;
+            text-align: center;
+        }
+    }
+    .gem {
+        position: absolute;
+        left: -6em;
+        z-index: 2;
+        max-width: 100px;
+        top: 1em;
+    }
+    @include breakpoint('md') {
+        position: relative;
+        z-index: 2;
+        right: -3em;
+    }
+    .post-thumb {
+        img {
+            max-width: 450px;
+            @extend .center-block;
+        }
+    }
+    .post-link {
+        margin-top: 2em;
+    }
+}

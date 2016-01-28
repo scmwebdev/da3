@@ -22,8 +22,8 @@ gulp.task('sass', function(){
 
 gulp.task('js', function(){
 	return gulp.src([
-			'js/*.js',
-			basePath + '/fastclick/lib/fastclick.js'
+			basePath + '/fastclick/lib/fastclick.js',
+			'js/*.js'
 		])
 		.pipe(plugins.concat('main.js'))
 		.pipe(gulp.dest('../'))

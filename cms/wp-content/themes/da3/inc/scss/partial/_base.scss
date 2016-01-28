@@ -24,3 +24,7 @@
         @extend .nopadding;
     }
 }
+
+.scroll-to-top:hover {
+	background: $main-color;
+}
