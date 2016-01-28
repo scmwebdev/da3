@@ -18,7 +18,14 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info container">
-				<div class="social-icons spacepad">
+				<?php
+					$args = array( 'numberposts' => '1', 'category_name' => '_footer');
+					$recent_posts = wp_get_recent_posts( $args ); 
+					foreach ($recent_posts as $recent) {
+						echo $recent["post_content"];
+					}
+				?>
+				<!-- <div class="social-icons spacepad">
 					<ul class="nodots clearfix center-block">
 						<li class="col-xs-4"><a href=""><img src="<?php echo get_stylesheet_directory_uri() ?>/inc/img/twitter-social.png" alt="twitter"></a></li>
 						<li class="col-xs-4"><a href=""><img src="<?php echo get_stylesheet_directory_uri() ?>/inc/img/fb-social.png" alt="facebook"></a></li>
@@ -27,7 +34,7 @@
 				</div>
 				<div class="extra-info">
 					© Indosiar 2015. All Rights Reserved.
-				</div>
+				</div> -->
 			</div><!-- .site-info -->
 			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
 		</footer><!-- #colophon -->
