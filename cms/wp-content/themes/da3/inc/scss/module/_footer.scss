@@ -1,0 +1,25 @@
+/* ===========================================
+ * Footer Template
+ * ===========================================*/
+
+
+/* social media icons */
+.social-icons {
+    ul {
+        max-width: 320px; /* set the max width to center aligned */
+        // remove the margin bottom and the left padding
+        margin-bottom: 0; 
+        padding-left: 0;
+        > li {
+            text-align: center;
+        }
+    }
+}
+
+/* text underneath the social icons */
+.extra-info {
+    @include spacemar(5px);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}

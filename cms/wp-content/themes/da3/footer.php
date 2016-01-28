@@ -18,13 +18,15 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info container">
-				<?php if( of_get_option('footer_social') ) dazzling_social_icons(); ?>
-				<nav role="navigation" class="col-md-6">
-					<?php dazzling_footer_links(); ?>
-				</nav>
-				<div class="copyright col-md-6">
-					<?php echo of_get_option( 'custom_footer_text', 'dazzling' ); ?>
-					<?php dazzling_footer_info(); ?>
+				<div class="social-icons spacepad">
+					<ul class="nodots clearfix center-block">
+						<li class="col-xs-4"><a href=""><img src="<?php echo get_stylesheet_directory_uri() ?>/inc/img/twitter-social.png" alt="twitter"></a></li>
+						<li class="col-xs-4"><a href=""><img src="<?php echo get_stylesheet_directory_uri() ?>/inc/img/fb-social.png" alt="facebook"></a></li>
+						<li class="col-xs-4"><a href=""><img src="<?php echo get_stylesheet_directory_uri() ?>/inc/img/vidio-social.png" alt="vidio"></a></li>
+					</ul>
+				</div>
+				<div class="extra-info">
+					© Indosiar 2015. All Rights Reserved.
 				</div>
 			</div><!-- .site-info -->
 			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->

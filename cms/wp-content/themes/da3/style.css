@@ -448,6 +448,9 @@ html * {
 .scroll-to-top:hover {
   background: #53094b; }
 
+#footer-area ul li {
+  border: none; }
+
 /* call in the modules */
 /* ===========================================
  * Header (logo & megamenu)
@@ -493,6 +496,26 @@ html * {
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px; }
+
+/* ===========================================
+ * Footer Template
+ * ===========================================*/
+/* social media icons */
+.social-icons ul {
+  max-width: 320px;
+  /* set the max width to center aligned */
+  margin-bottom: 0;
+  padding-left: 0; }
+  .social-icons ul > li {
+    text-align: center; }
+
+/* text underneath the social icons */
+.extra-info {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff; }
 
 /* pgae specific style */
 /* ===========================================

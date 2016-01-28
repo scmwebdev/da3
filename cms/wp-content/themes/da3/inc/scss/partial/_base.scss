@@ -25,6 +25,12 @@
     }
 }
 
+// change the color when the scroll to top btn is hovered
 .scroll-to-top:hover {
 	background: $main-color;
+}
+
+// remove border
+#footer-area ul li {
+	border: none;
 }
