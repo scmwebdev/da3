@@ -93,3 +93,12 @@
         margin-top: 2em;
     }
 }
+
+$postList: thumb title excerpt link;
+@each $post in $postList {
+	$i: index($postList, $post);
+	$i : $i + 2;
+    .post-#{$post} {
+        animation-delay: ($i/10) + s;
+    }
+}

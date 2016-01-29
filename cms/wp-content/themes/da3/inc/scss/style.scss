@@ -11,6 +11,9 @@ Template:       dazzling
 @import '../node_modules/slick-carousel/slick/slick.scss';
 @import '../node_modules/slick-carousel/slick/slick-theme.scss';
 
+/* vendor css */
+@import 'vendor/animate';
+
 /* setup base scss */
 @import 'partial/base';
 
