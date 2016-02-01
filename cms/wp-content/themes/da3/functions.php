@@ -28,7 +28,8 @@ function theme_js() {
 
 // enable featured image on pages/posts
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'home_post_thumb', 768, 600, true );
+add_image_size( 'featuredImage_mobile', 768, 600, true );
+add_image_size( 'featuredImage_desktop', 1920, 600, true );
 
 function imgResponsive() {
 	if (wp_is_mobile()) {

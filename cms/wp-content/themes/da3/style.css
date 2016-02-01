@@ -2588,13 +2588,12 @@ Template:       dazzling
  * List of Variables
  * ===========================================*/
 /*colors--*/
+/*path--*/
 /* ------------------- */
 /* ------------------- */
 /* *********************************** */
 /* Utility class */
 /* *********************************** */
-/* ------------------- */
-/* ------------------- */
 ul.nodots > li {
   list-style-type: none !important; }
 
@@ -2853,7 +2852,7 @@ html * {
  * ===========================================*/
 .da3-home #content {
   /* remove space between the main banner and the content area
-			on the homepage */
+            on the homepage */
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -2863,6 +2862,10 @@ html * {
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px; }
+
+.da3-home .content-segment .gallery-post-photo {
+  margin-top: 3em;
+  margin-bottom: 3em; }
 
 .content-segment div[class^="post-"] {
   visibility: hidden; }
@@ -2959,13 +2962,13 @@ html * {
     margin-top: 2em; }
 
 .post-thumb {
-  animation-delay: 0.3s; }
+  animation-delay: 0.11s; }
 
 .post-title {
-  animation-delay: 0.4s; }
+  animation-delay: 0.21s; }
 
 .post-excerpt {
-  animation-delay: 0.5s; }
+  animation-delay: 0.31s; }
 
 .post-link {
-  animation-delay: 0.6s; }
+  animation-delay: 0.41s; }

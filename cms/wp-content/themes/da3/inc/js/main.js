@@ -107,9 +107,7 @@ $(document).scroll(function () {
         // var target = $('div[class^="post-"]').;
         // var targetData = $()
         var t = $(this).parent().offset().top;
-        var t = t - 100;
-        console.log(t);
-        console.log(y);
+        var t = t - 300;
         if (y > t) {
             // $(this).fadeIn();
             $(this).addClass('animated fadeInLeft').css('visibility', 'visible');
