@@ -30,6 +30,8 @@ function theme_js() {
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'featuredImage_mobile', 768, 600, true );
 add_image_size( 'featuredImage_desktop', 1920, 600, true );
+add_image_size( 'postThumb_desktop', 717, 597, true );
+add_image_size( 'postThumb_mobile', 250, 250, true );
 
 function imgResponsive() {
 	if (wp_is_mobile()) {

@@ -25,12 +25,47 @@
     }
 }
 
+/* change the footer background color */
+#footer-area, 
+#colophon {
+	background-color: $main-color;
+}
+
 // change the color when the scroll to top btn is hovered
 .scroll-to-top:hover {
-	background: $main-color;
+    background: $main-color;
 }
 
 // remove border
 #footer-area ul li {
-	border: none;
+    border: none;
+}
+
+.special-img {
+    position: relative;
+    @include breakpoint('xs') {
+        /* create the overlay shadow with :after */
+        &:after {
+            content: '';
+            z-index: 10;
+            display: block;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+        /* when hovered remove the overlay by manipulating the opacity */
+        &:hover:after {
+            background: rgba(0, 0, 0, 0);
+            @include transition(0.3s);
+            cursor: pointer;
+        }
+    }
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
 }

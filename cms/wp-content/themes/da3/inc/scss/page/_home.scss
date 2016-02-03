@@ -84,8 +84,9 @@
         right: -3em;
     }
     .post-thumb {
+        position: relative;
         img {
-            max-width: 450px;
+            max-width: 100%;
             @extend .center-block;
         }
     }
@@ -96,8 +97,8 @@
 
 $postList: thumb title excerpt link;
 @each $post in $postList {
-	$i: index($postList, $post);
-	$i : $i + 0.1;
+    $i: index($postList, $post);
+    $i: $i + 0.1;
     .post-#{$post} {
         animation-delay: ($i/10) + s;
     }

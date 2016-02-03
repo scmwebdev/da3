@@ -15,8 +15,8 @@
 				$recent_posts = wp_get_recent_posts( $args ); 
 				foreach( $recent_posts as $recent ){
 					imgResponsive();
-					$postThumb = get_the_post_thumbnail($recent["ID"]);
-					$postThumb_mobile = get_the_post_thumbnail($recent["ID"], array(250));
+					$postThumb = get_the_post_thumbnail($recent["ID"], 'postThumb_desktop');
+					$postThumb_mobile = get_the_post_thumbnail($recent["ID"], 'postThumb_mobile');
 					$postLink = get_permalink($recent["ID"]);
 					$postTitle = $recent["post_title"];
 					$postExcerpt = $recent["post_excerpt"];
@@ -26,11 +26,18 @@
 				        <div class="post-link"><a href="'. $postLink .'">baca selanjutnya ...</a></div>
 				    </div>';
 
-					if (wp_is_mobile()) {
-						echo '<div class="_rightCol col-sm-5"><div class="post-thumb"><a href="">'. $postThumb_mobile .'</a></div></div>';
-					} else {
-						echo '<div class="_rightCol col-sm-5"><div class="post-thumb"><a href="">'. $postThumb .'</a></div></div>';
-					} 
+				    if (wp_is_mobile()) {
+				    	echo '<div class="_rightCol col-sm-5"><div class="post-thumb special-img "><a href="">'. $postThumb_mobile .'</a></div></div>';
+		        		// the_post_thumbnail('featuredImage_mobile', array( 'class' => 'img-responsive fullwidth'));
+		        	} else {
+		        		echo '<div class="_rightCol col-sm-5"><div class="post-thumb special-img "><a href="">'. $postThumb .'</a></div></div>';
+		        		// the_post_thumbnail('featuredImage_desktop', array( 'class' => 'img-responsive fullwidth'));
+		        	}
+					// if (wp_is_mobile()) {
+					// 	echo '<div class="_rightCol col-sm-5"><div class="post-thumb special-img "><a href="">'. $postThumb_mobile .'</a></div></div>';
+					// } else {
+					// 	echo '<div class="_rightCol col-sm-5"><div class="post-thumb special-img "><a href="">'. $postThumb .'</a></div></div>';
+					// } 
 				}
 			?>
 		</div>
@@ -49,7 +56,7 @@
 		<div class="gallery-post-photo">
 			<div class="spacemar subtitle">
 				<div class="container">
-					<h4 class="text-center bold">35 Calon Bintang D'Academy 335 Calon Bintang D'Academy 3</h4>
+					<h4 class="text-center bold">35 Calon Bintang D'Academy 3</h4>
 				</div>
 			</div>
 			<div class="container-fluid da3-slider">
@@ -73,7 +80,7 @@
 		</div>
 		<div class="spacemar subtitle">
 			<div class="container">
-				<h4 class="text-center bold">Dibalik audisi D’Academy 3</h4>
+				<h4 class="text-center bold">Di balik audisi D’Academy 3</h4>
 			</div>
 		</div>
 		<div class="video-audisi-vid spacepad spacemar">
