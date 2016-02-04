@@ -33,11 +33,6 @@
 		        		echo '<div class="_rightCol col-sm-5"><div class="post-thumb special-img "><a href="">'. $postThumb .'</a></div></div>';
 		        		// the_post_thumbnail('featuredImage_desktop', array( 'class' => 'img-responsive fullwidth'));
 		        	}
-					// if (wp_is_mobile()) {
-					// 	echo '<div class="_rightCol col-sm-5"><div class="post-thumb special-img "><a href="">'. $postThumb_mobile .'</a></div></div>';
-					// } else {
-					// 	echo '<div class="_rightCol col-sm-5"><div class="post-thumb special-img "><a href="">'. $postThumb .'</a></div></div>';
-					// } 
 				}
 			?>
 		</div>

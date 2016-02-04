@@ -32,6 +32,8 @@ add_image_size( 'featuredImage_mobile', 768, 600, true );
 add_image_size( 'featuredImage_desktop', 1920, 600, true );
 add_image_size( 'postThumb_desktop', 717, 597, true );
 add_image_size( 'postThumb_mobile', 250, 250, true );
+add_image_size( 'itemList', 600, 400, true ); // for jury img
+remove_filter('the_content', 'wpautop'); // remove auto p tag from wordpress
 
 function imgResponsive() {
 	if (wp_is_mobile()) {

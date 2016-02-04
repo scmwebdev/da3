@@ -10,6 +10,7 @@ Template:       dazzling
 /* vendors */
 @import './node_modules/slick-carousel/slick/slick.scss';
 @import './node_modules/slick-carousel/slick/slick-theme.scss';
+@import './node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 /* vendor css */
 @import 'vendor/animate';
@@ -24,3 +25,4 @@ Template:       dazzling
 
 /* pgae specific style */
 @import 'page/home';
+@import 'page/jury';

@@ -43,7 +43,8 @@
 
 .special-img {
     position: relative;
-    @include breakpoint('xs') {
+    padding: 0 !important;
+    @include breakpoint('sm') {
         /* create the overlay shadow with :after */
         &:after {
             content: '';

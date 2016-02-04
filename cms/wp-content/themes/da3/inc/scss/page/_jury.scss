@@ -1,0 +1,67 @@
+/* ===========================================
+ * Jury SCSS
+ * ===========================================*/
+
+.da3-jury {
+    .juryHover {
+        @extend .special-img;
+        &:after {
+            background: rgba(160, 16, 144, 0.7);
+        }
+    }
+    .item {
+        @extend .spacemar;
+        .item-list {
+            @extend .spacemar;
+            &:nth-child(odd) {
+                > div:first-child {
+                    @extend .col-xs-12;
+                    @extend .col-sm-5;
+                    position: relative;
+                    @extend .juryHover;
+                }
+                > div:nth-child(2) {
+                    @extend .col-xs-12;
+                    @extend .col-sm-6;
+                    color: $main-color;
+                }
+            }
+            &:nth-child(even) {
+                > div:first-child {
+                    @extend .col-xs-12;
+                    @extend .col-sm-6;
+                    color: $main-color;
+                }
+                > div:nth-child(2) {
+                    @extend .col-xs-12;
+                    @extend .col-sm-5;
+                    position: relative;
+                    @extend .juryHover;
+                }
+            }
+            &-name {
+                position: absolute;
+                bottom: 1em;
+                left: 1.2em;
+                color: #fff;
+                display: none;
+            }
+            div {
+                font-size: 1.2em;
+                p:first-child:after {
+                    content: '';
+                    border-top: 2px solid $main-color;
+                    display: block;
+                    margin-top: 1em;
+                    width: 4em;
+                }
+            }
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}
