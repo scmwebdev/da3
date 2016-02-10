@@ -8468,11 +8468,11 @@ ul.nodots > li {
 .inline {
   display: inline; }
 
-.spacepad {
+.spacepad, .da3-jury .item .item-list {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-.spacemar, .gallery-post-photo .readmore, .da3-jury .item, .da3-jury .item .item-list {
+.spacemar, .gallery-post-photo .readmore, .da3-jury .item {
   margin-top: 20px;
   margin-bottom: 20px; }
 
@@ -8875,14 +8875,24 @@ html * {
 .da3-jury .juryHover:after, .da3-jury .item .item-list:nth-child(odd) > div:first-child:after, .da3-jury .item .item-list:nth-child(even) > div:nth-child(2):after {
   background: rgba(160, 16, 144, 0.7); }
 
+@inclue breakpoint('xs') {
+  .da3-jury .item .item-list {
+    border-bottom: 1px solid #53094b; } }
+
 .da3-jury .item .item-list:nth-child(odd) > div:first-child {
   position: relative; }
 
 .da3-jury .item .item-list:nth-child(odd) > div:nth-child(2) {
   color: #53094b; }
+  @media (max-width: 767px) {
+    .da3-jury .item .item-list:nth-child(odd) > div:nth-child(2) {
+      margin-top: 10px; } }
 
 .da3-jury .item .item-list:nth-child(even) > div:first-child {
   color: #53094b; }
+  @media (max-width: 767px) {
+    .da3-jury .item .item-list:nth-child(even) > div:first-child {
+      margin-top: 10px; } }
 
 .da3-jury .item .item-list:nth-child(even) > div:nth-child(2) {
   position: relative; }

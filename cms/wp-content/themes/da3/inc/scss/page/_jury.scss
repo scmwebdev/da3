@@ -12,7 +12,10 @@
     .item {
         @extend .spacemar;
         .item-list {
-            @extend .spacemar;
+            @extend .spacepad;
+            @inclue breakpoint('xs') {
+                border-bottom: 1px solid $main-color;
+            }
             &:nth-child(odd) {
                 > div:first-child {
                     @extend .col-xs-12;
@@ -24,6 +27,9 @@
                     @extend .col-xs-12;
                     @extend .col-sm-6;
                     color: $main-color;
+                    @include breakpoint('xs') {
+                        margin-top: 10px;
+                    }
                 }
             }
             &:nth-child(even) {
@@ -31,6 +37,9 @@
                     @extend .col-xs-12;
                     @extend .col-sm-6;
                     color: $main-color;
+                    @include breakpoint('xs') {
+                        margin-top: 10px;
+                    }
                 }
                 > div:nth-child(2) {
                     @extend .col-xs-12;
