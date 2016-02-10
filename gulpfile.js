@@ -104,9 +104,5 @@ gulp.task('webserver', function() {
     plugins.connect.server();
 });
 
-gulp.task('default', ['sass', 'js', 'watch'], function() {
-
-    console.log('Start Gulp Tasks')
-
-});
+gulp.task('default', ['sass', 'js', 'watch']);
 

@@ -8858,16 +8858,16 @@ html * {
     margin-top: 2em; }
 
 .post-thumb {
-  animation-delay: 0.11s; }
+  animation-delay: 0.07333s; }
 
 .post-title {
-  animation-delay: 0.21s; }
+  animation-delay: 0.14s; }
 
 .post-excerpt {
-  animation-delay: 0.31s; }
+  animation-delay: 0.20667s; }
 
 .post-link {
-  animation-delay: 0.41s; }
+  animation-delay: 0.27333s; }
 
 /* ===========================================
  * Jury SCSS
