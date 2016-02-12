@@ -17,13 +17,14 @@
 					}
 				endwhile; ?>
 			<div class="item clearfix">
-			<?php
-
-				query_posts('category_name=jury&order=ASC'); //set the condition for the posts query
-				while (have_posts()) : the_post();
-					get_template_part( 'template/content', 'jury' ); //get the jury page template
-				endwhile;
-			?>
+				<?php
+					$title = get_the_title();
+					$args = 'category_name='. $title .'&order=ASC';
+					query_posts($args);
+					while (have_posts()) : the_post();
+						get_template_part( 'template/content', $title ); //get the jury page template
+					endwhile;
+				?>
 		    </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
