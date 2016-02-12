@@ -1,6 +1,6 @@
 <?php 
 /*
- * Template Name: da3-jury-template
+ * Template Name: da3-content-page
  */
 ?>
 <?php get_header(); ?>

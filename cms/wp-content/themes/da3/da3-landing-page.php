@@ -1,6 +1,6 @@
 <?php 
 /*
- * Template Name: da3-template
+ * Template Name: da3-landing-page
  */
 ?>
 <?php get_header(); ?>

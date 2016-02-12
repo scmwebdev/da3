@@ -23,7 +23,5 @@ Template:       dazzling
 @import 'module/content';
 @import 'module/footer';
 
-/* pgae specific style */
-@import 'page/home';
-@import 'page/jury';
-@import 'page/kontestan';
+/* page specific style */
+@import 'page/page';

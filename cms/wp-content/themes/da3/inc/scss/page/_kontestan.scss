@@ -2,11 +2,15 @@
  * Kontestan SCSS
  * =========================================== */
 
-.da3-contestant {
+.da3-kontestan {
+    .item {
+        @extend .spacemar;
+    }
     .item-list {
         position: relative;
         overflow: hidden;
         @extend .nopadding;
+
         &:hover {
             .item-list-name {
                 @include breakpoint('sm') {

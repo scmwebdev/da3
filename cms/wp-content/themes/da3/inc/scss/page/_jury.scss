@@ -3,23 +3,6 @@
  * ===========================================*/
 
 .da3-juri {
-    // remove the space between the menu and content
-    #content {
-        margin-top: 0; 
-    }
-    .page-title {
-        background: $third-color;
-        padding-left: 1.2em;
-        padding-right: 1.2em;
-
-        text-align: center;
-        > h1 {
-            margin: 0;
-            @extend .spacepad;
-            color: #fff;
-             font-weight: 700;
-        }
-    }
     // select the page title (img)
     .site-main > img {
         @media (max-width: 768px) {

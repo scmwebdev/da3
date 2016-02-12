@@ -8453,7 +8453,7 @@ ul.nodots > li {
 
 .nopadding, #primary,
 .site-content > .main-content-area,
-#content.container, .da3-contestant .item-list {
+#content.container, .da3-kontestan .item-list {
   padding: 0 !important; }
 
 .nomargin {
@@ -8468,11 +8468,11 @@ ul.nodots > li {
 .inline {
   display: inline; }
 
-.spacepad, .da3-juri .page-title > h1, .da3-juri .item .item-list {
+.spacepad, .da3-juri .item .item-list, .page-template-da3-content-page .page-title > h1 {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-.spacemar, .gallery-post-photo .readmore, .da3-juri .item {
+.spacemar, .gallery-post-photo .readmore, .da3-juri .item, .da3-kontestan .item {
   margin-top: 20px;
   margin-bottom: 20px; }
 
@@ -8784,7 +8784,7 @@ html * {
   font-weight: bold;
   color: #fff; }
 
-/* pgae specific style */
+/* page specific style */
 /* ===========================================
  * Home Template SCSS
  * ===========================================*/
@@ -8872,19 +8872,6 @@ html * {
 /* ===========================================
  * Jury SCSS
  * ===========================================*/
-.da3-juri #content {
-  margin-top: 0; }
-
-.da3-juri .page-title {
-  background: #a01090;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
-  text-align: center; }
-  .da3-juri .page-title > h1 {
-    margin: 0;
-    color: #fff;
-    font-weight: 700; }
-
 @media (max-width: 768px) {
   .da3-juri .site-main > img {
     margin: 0 auto; } }
@@ -8917,13 +8904,13 @@ html * {
 /* ===========================================
  * Kontestan SCSS
  * =========================================== */
-.da3-contestant .item-list {
+.da3-kontestan .item-list {
   position: relative;
   overflow: hidden; }
   @media (min-width: 768px) {
-    .da3-contestant .item-list:hover .item-list-name {
+    .da3-kontestan .item-list:hover .item-list-name {
       bottom: 0; } }
-  .da3-contestant .item-list-name {
+  .da3-kontestan .item-list-name {
     background: rgba(83, 9, 75, 0.9);
     position: absolute;
     padding: 10px 20px;
@@ -8937,6 +8924,19 @@ html * {
     -o-transition: 0.3s;
     transition: 0.3s; }
     @media (min-width: 768px) {
-      .da3-contestant .item-list-name {
+      .da3-kontestan .item-list-name {
         bottom: -10em;
         text-align: left; } }
+
+.page-template-da3-content-page #content {
+  margin-top: 0; }
+
+.page-template-da3-content-page .page-title {
+  background: #a01090;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  text-align: center; }
+  .page-template-da3-content-page .page-title > h1 {
+    margin: 0;
+    color: #fff;
+    font-weight: 700; }
