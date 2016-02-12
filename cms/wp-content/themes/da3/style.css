@@ -8876,13 +8876,14 @@ html * {
   margin-top: 0; }
 
 .da3-jury .page-title {
-  background: #53094b;
+  background: #a01090;
   padding-left: 1.2em;
   padding-right: 1.2em;
   text-align: center; }
   .da3-jury .page-title > h1 {
     margin: 0;
-    color: #fff; }
+    color: #fff;
+    font-weight: 700; }
 
 @media (max-width: 768px) {
   .da3-jury .site-main > img {
