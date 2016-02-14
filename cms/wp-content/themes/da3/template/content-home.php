@@ -44,7 +44,7 @@
 			if (wp_is_mobile()) {
 				echo '<h2 class="text-center bold">Gallery Photo</h2>';
 			} else {
-				echo '<img class="img-responsive" src="'. get_stylesheet_directory_uri() .'/inc/img/da3_title_kontestan.png">';
+				echo '<img class="img-responsive" src="'. get_stylesheet_directory_uri() .'/inc/img/da3_title_kontestan.jpg">';
 			}
 		?>
 		</div>

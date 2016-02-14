@@ -10,10 +10,10 @@
 			
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php if ( is_front_page() ) {
-					get_template_part( 'content', 'home' );
+					get_template_part( 'template/content', 'home' );
 				}
 				else {
-					get_template_part( 'content', 'page' );
+					get_template_part( 'template/content', 'page' );
 				}
 			?>
 			<?php endwhile; // end of the loop. ?>
