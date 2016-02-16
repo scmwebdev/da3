@@ -9,7 +9,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="content-segment header clearfix">
 		<div class="latest-post">
-			<img class="img-responsive gem" src="<?php echo get_stylesheet_directory_uri();  ?>/inc/img/da3_gem_1.png" alt="gem - blur">
 			<?php
 				$args = array( 'numberposts' => '1', 'category_name' => 'article');
 				$recent_posts = wp_get_recent_posts( $args ); 
