@@ -16,7 +16,7 @@
 						the_content();
 					}
 				endwhile; ?>
-			<div class="item clearfix">
+			<div class="item spacemar clearfix">
 				<?php
 					$title = get_the_title();
 					$args = 'category_name='. $title .'&order=ASC';
