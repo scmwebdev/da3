@@ -51,3 +51,4 @@ function container() {
 		echo 'container';
 	}
 }
+?>

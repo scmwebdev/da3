@@ -22,7 +22,7 @@
 					$args = 'category_name='. $title .'&order=ASC';
 					query_posts($args);
 					while (have_posts()) : the_post();
-						get_template_part( 'template/content', $title ); //get the jury page template
+						get_template_part( 'template/content', $title ); 
 					endwhile;
 				?>
 		    </div>

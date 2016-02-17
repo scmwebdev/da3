@@ -8926,6 +8926,21 @@ html * {
         bottom: -10em;
         text-align: left; } }
 
+/* ===========================================
+ * Artikel SCSS
+ * ===========================================*/
+.da3-artikel .item-list-readmore {
+  float: right;
+  margin-top: 1em;
+  color: #fff; }
+  .da3-artikel .item-list-readmore .btn-primary {
+    background: #53094b;
+    border-color: #53094b; }
+    .da3-artikel .item-list-readmore .btn-primary:hover {
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+      background: #3c0736; }
+
 @media (min-width: 768px) {
   #primary {
     margin-bottom: 2em; } }

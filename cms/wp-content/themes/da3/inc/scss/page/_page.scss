@@ -1,6 +1,7 @@
 @import 'home';
 @import 'jury';
 @import 'kontestan';
+@import 'artikel';
 #primary {
     @include breakpoint('sm') {
         margin-bottom: 2em;
