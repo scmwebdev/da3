@@ -8744,23 +8744,6 @@ html * {
 /* ===========================================
  * Content Template Part
  * ===========================================*/
-.da3-home #content {
-  /* remove space between the main banner and the content area
-            on the homepage */
-  margin-top: 0;
-  margin-bottom: 0; }
-
-.da3-home .header {
-  background-color: #53094b;
-  color: #fff;
-  position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px; }
-
-.da3-home .content-segment .gallery-post-photo {
-  margin-top: 3em;
-  margin-bottom: 3em; }
-
 .content-segment div[class^="post-"] {
   visibility: hidden; }
 
@@ -8795,6 +8778,23 @@ html * {
 .da3-home .video-audisi {
   background: url(inc/img/da3_bg_gem.jpg);
   color: #fff; }
+
+.da3-home #content {
+  /* remove space between the main banner and the content area
+            on the homepage */
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.da3-home .header {
+  background-color: #53094b;
+  color: #fff;
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em; }
+
+.da3-home .content-segment .gallery-post-photo {
+  margin-top: 3em;
+  margin-bottom: 3em; }
 
 .gallery-post {
   padding-top: 15px;
@@ -8925,6 +8925,10 @@ html * {
       .da3-kontestan .item-list-name {
         bottom: -10em;
         text-align: left; } }
+
+@media (min-width: 768px) {
+  #primary {
+    margin-bottom: 2em; } }
 
 .page-template-da3-content-page #content {
   margin-top: 0; }

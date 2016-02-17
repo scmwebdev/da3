@@ -2,30 +2,7 @@
  * Content Template Part
  * ===========================================*/
 
-.da3 {
-    &-home {
-        #content {
-            /* remove space between the main banner and the content area
-            on the homepage */
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        .header {
-            background-color: $main-color;
-            color: #fff;
-            position: relative;
-            @include spacepad(15px);
-        }
-        .content-segment {
-            .gallery-post-title {
-                // }/cms/wp-content/themes/da3/inc
-            }
-            .gallery-post-photo {
-                @include spacemar(3em);
-            }
-        }
-    }
-}
+
 
 .content-segment div[class^="post-"] {
     visibility: hidden;

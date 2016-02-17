@@ -1,24 +1,28 @@
 @import 'home';
 @import 'jury';
 @import 'kontestan';
+#primary {
+    @include breakpoint('sm') {
+        margin-bottom: 2em;
+    }
+}
 
 // genetic styling for all content pages
 .page-template-da3-content-page {
     // remove the space between the menu and content
     #content {
-        margin-top: 0; 
+        margin-top: 0;
     }
-        .page-title {
+    .page-title {
         background: $third-color;
         padding-left: 1.2em;
         padding-right: 1.2em;
-
         text-align: center;
         > h1 {
             margin: 0;
             @extend .spacepad;
             color: #fff;
-             font-weight: 700;
+            font-weight: 700;
         }
     }
 }
