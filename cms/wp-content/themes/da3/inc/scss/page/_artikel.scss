@@ -1,0 +1,22 @@
+/* ===========================================
+ * Artikel SCSS
+ * ===========================================*/
+
+.da3-artikel {
+    .item-list {
+        &-readmore {
+            float: right;
+            margin-top: 1em;
+            color: #fff;
+            .btn-primary {
+                background: $main-color;
+                border-color: $main-color;
+                &:hover {
+                    outline: 5px auto -webkit-focus-ring-color;
+                    outline-offset: -2px;
+                    background: darken($main-color, 5%);
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@
 			<div class="content-segment header clearfix">
 				<div class="latest-post">
 					<?php 
-						$args = 'category_name=article';
+						$args = 'category_name=artikel';
 						query_posts($args);
 						while (have_posts()) : the_post();
 							get_template_part('template/partial', 'post');

@@ -12,6 +12,9 @@
     <div class="post-link"><a href=<?php echo get_permalink(); ?>>baca selanjutnya ...</a></div>
 </div>
 <div class="_rightCol col-sm-5">
-	<div class="post-thumb special-img "><a href=""><?php the_post_thumbnail('itemList'); ?></a>
-	</div>
+	<a href="<?php echo get_permalink(); ?>">
+		<div class="post-thumb special-img ">
+			<?php the_post_thumbnail('itemList'); ?>
+		</div>
+	</a>
 </div>

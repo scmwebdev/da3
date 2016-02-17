@@ -61,20 +61,17 @@
         <div class="top-section">
 		<?php dazzling_featured_slider(); ?>
 		<?php dazzling_call_for_action(); ?>
-        </div>
-        <?php 
-        	if (wp_is_mobile()) {
+			    <?php 
+	    if (is_front_page()) {
+			if (wp_is_mobile()) {
         		the_post_thumbnail('featuredImage_mobile', array( 'class' => 'img-responsive fullwidth'));
         	} else {
         		the_post_thumbnail('featuredImage_desktop', array( 'class' => 'img-responsive fullwidth'));
         	}
-        	
-			// if ( is_front_page() ) {	
-	  //      		the_post_thumbnail('sparkling-featured', array( 'class' => 'img-responsive fullwidth'));
-			// } else {
-			// 	echo '<header class=""></header>';
-			// }
+	    }
+
 		?>
+        </div>
 
         <div id="content" class="site-content container">
             
