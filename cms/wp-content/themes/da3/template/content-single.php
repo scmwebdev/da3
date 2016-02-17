@@ -6,7 +6,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
-
+		<div class="banner">
+			<?php the_post_thumbnail('featuredImage_desktop'); ?>
+		</div>
 		<h1 class="entry-title "><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
@@ -16,6 +18,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<?php //the_content('<p class="serif">Read the rest of this entry &raquo;'); ?>
 		<?php
 			wp_link_pages( array(
 				'before'            => '<div class="page-links">'.__( 'Pages:', 'dazzling' ),
