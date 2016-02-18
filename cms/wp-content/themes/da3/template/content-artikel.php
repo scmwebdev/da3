@@ -20,3 +20,4 @@
 		</div>
 	</div>
 </div>
+<hr class="col-xs-12" />

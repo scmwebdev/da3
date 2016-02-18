@@ -8941,6 +8941,12 @@ html * {
       outline-offset: -2px;
       background: #3c0736; }
 
+.da3-artikel .entry-content {
+  margin-top: 0; }
+
+.da3-artikel .page-header {
+  margin-bottom: 0; }
+
 @media (min-width: 768px) {
   #primary {
     margin-bottom: 2em; } }
