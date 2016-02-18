@@ -16,8 +16,7 @@
 			<?php the_excerpt(); ?>
 		</div>
 		<div class="item-list-readmore">
-			<a href=""><button type="button" class="btn btn-primary">Baca selanjutnya</button></a>
+			<a href="<?php echo get_permalink(); ?>"><button type="button" class="btn btn-primary">Baca selanjutnya</button></a>
 		</div>
 	</div>
 </div>
-<hr class="col-xs-12" />

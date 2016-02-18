@@ -15,6 +15,7 @@
 						while (have_posts()) : the_post();
 							get_template_part('template/partial', 'post');
 						endwhile;
+						wp_reset_query();
 					?>
 				</div>
 			</div>
@@ -28,19 +29,17 @@
 						}
 					?>
 				</div>
-				<div class="spacemar subtitle">
+				<div class="video-audisi-vid spacepad spacemar clearfix">
 					<div class="container">
-						<h4 class="text-center bold">Di balik audisi D’Academy 3</h4>
+						<?php 
+							$args = 'category_name=video&showposts=3';
+							query_posts($args);
+							while (have_posts()) : the_post();
+								get_template_part('template/partial', 'video');
+							endwhile;
+							wp_reset_query();
+						?>
 					</div>
-				</div>
-				<div class="video-audisi-vid spacepad spacemar">
-					<?php 
-						$args = 'category_name=livestream';
-						query_posts($args);
-						while (have_posts()) : the_post();
-							the_content();
-						endwhile;
-					?>
 				</div>
 			</div>
 			<div class="content-segment gallery-post">
@@ -53,20 +52,17 @@
 						}
 					?>
 				</div>
-				<div class="gallery-post-photo">
-					<div class="container-fluid da3-slider">
-					<?php 
-						$cat = 'galeri';
-						$args = 'category_name=galeri';
-						query_posts($args);
-						while (have_posts()) : the_post();
-							get_template_part('template/content', 'galeri');
-						endwhile;
+				<div class="gallery-instagram">
+					<?php
+						$postId = 206;
+						$getPost = get_post($postId);
+						echo apply_filters('the_content', $getPost->post_content);
 					?>
+					<div class="container text-right">
+						<a href="<?php echo site_url(); ?>/galeri"><button type="button" class="btn btn-primary">pergi ke galeri</button>
+						</a>
 					</div>
-					<div class="clearfix container readmore">
-						<div class="col-xs-12 spacepad text-right bold"><a href="<?php echo site_url(); ?>/galeri">selanjutnya.. </a></div>
-					</div>
+					
 				</div>
 			</div>
 		</main><!-- #main -->

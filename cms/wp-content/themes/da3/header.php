@@ -73,9 +73,9 @@
 		?>
         </div>
 
-        <div id="content" class="site-content container">
+        <div id="content" class="site-content <?php container(); ?>">
             
-            <div class="<?php container(); ?> main-content-area">
+            <div class="main-content-area">
             <?php
             
                 global $post;

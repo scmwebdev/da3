@@ -44,11 +44,25 @@ function imgResponsive() {
 	}
 }
 
+/* 
+ * if its mobile use class .container-fluid
+ * if the post category is video output nothing
+ * other than those 2 use .container
+ */
 function container() {
-	if (wp_is_mobile()) {
-		echo 'container-fluid';
+	$postCat = getPostCat();
+	if(($postCat == 'video') OR (wp_is_mobile())) {
+		echo '';
 	} else {
 		echo 'container';
 	}
 }
+
+// get current post category
+function getPostCat() {
+	$category = get_the_category();
+	$selectCategory = $category[0]->cat_name;
+	return $selectCategory;
+}
+
 ?>

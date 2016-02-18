@@ -2,6 +2,7 @@
 @import 'jury';
 @import 'kontestan';
 @import 'artikel';
+@import 'video';
 #primary {
     @include breakpoint('sm') {
         margin-bottom: 2em;

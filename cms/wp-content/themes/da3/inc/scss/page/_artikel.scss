@@ -5,9 +5,10 @@
 .da3-artikel {
     .item-list {
         &-readmore {
-            float: right;
             margin-top: 1em;
             color: #fff;
+            text-align: right;
+            padding-bottom: 2em;
             .btn-primary {
                 background: $main-color;
                 border-color: $main-color;
@@ -18,11 +19,16 @@
                 }
             }
         }
+        &:after {
+            content: " ";
+            border-top: 1px solid #53094b;
+            display: block;
+        }
     }
     .entry-content {
-    	margin-top: 0;
+        margin-top: 0;
     }
     .page-header {
-    	margin-bottom: 0;
+        margin-bottom: 0;
     }
 }

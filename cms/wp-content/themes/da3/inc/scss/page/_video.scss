@@ -1,0 +1,18 @@
+/* ===========================================
+ * Video SCSS
+ * ===========================================*/
+
+.single-format-video {
+    .entry-header {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+        max-width: 1920px;
+    }
+    .entry-content {
+        margin-top: 0;
+        .entry-title {
+            margin-top: 0;
+        }
+    }
+}

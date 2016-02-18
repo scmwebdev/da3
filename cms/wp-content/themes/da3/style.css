@@ -8779,6 +8779,16 @@ html * {
   background: url(inc/img/da3_bg_gem.jpg);
   color: #fff; }
 
+.da3-home .video {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .da3-home .video:hover {
+    background-color: #3c0736; }
+  .da3-home .video-title {
+    padding-top: 5px;
+    color: #fff;
+    text-decoration: none !important; }
+
 .da3-home #content {
   /* remove space between the main banner and the content area
             on the homepage */
@@ -8788,9 +8798,11 @@ html * {
 .da3-home .header {
   background-color: #53094b;
   color: #fff;
-  position: relative;
-  padding-top: 4em;
-  padding-bottom: 4em; }
+  position: relative; }
+  @media (min-width: 768px) {
+    .da3-home .header {
+      padding-top: 4em;
+      padding-bottom: 4em; } }
 
 .da3-home .content-segment .gallery-post-photo {
   margin-top: 3em;
@@ -8808,6 +8820,11 @@ html * {
         max-width: 400px; }
     .gallery-post-photo .readmore {
       font-weight: 700; } }
+
+.gallery-instagram #sbi_load {
+  text-align: right !important;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .video-audisi {
   padding-top: 15px;
@@ -8833,10 +8850,10 @@ html * {
   @media (max-width: 767px) {
     .da3-home .latest-post .post-title,
     .da3-home .latest-post .post-excerpt {
-      text-align: center; }
+      text-align: left; }
     .da3-home .latest-post .post-thumb {
       margin: 10px 0;
-      text-align: center; } }
+      text-align: left; } }
   .da3-home .latest-post .gem {
     position: absolute;
     left: -6em;
@@ -8853,7 +8870,8 @@ html * {
     .da3-home .latest-post .post-thumb img {
       max-width: 100%; }
   .da3-home .latest-post .post-link {
-    margin-top: 2em; }
+    margin-top: 2em;
+    margin-bottom: 2em; }
 
 .post-thumb {
   animation-delay: 0.07333s; }
@@ -8930,9 +8948,10 @@ html * {
  * Artikel SCSS
  * ===========================================*/
 .da3-artikel .item-list-readmore {
-  float: right;
   margin-top: 1em;
-  color: #fff; }
+  color: #fff;
+  text-align: right;
+  padding-bottom: 2em; }
   .da3-artikel .item-list-readmore .btn-primary {
     background: #53094b;
     border-color: #53094b; }
@@ -8941,11 +8960,30 @@ html * {
       outline-offset: -2px;
       background: #3c0736; }
 
+.da3-artikel .item-list:after {
+  content: " ";
+  border-top: 1px solid #53094b;
+  display: block; }
+
 .da3-artikel .entry-content {
   margin-top: 0; }
 
 .da3-artikel .page-header {
   margin-bottom: 0; }
+
+/* ===========================================
+ * Video SCSS
+ * ===========================================*/
+.single-format-video .entry-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  max-width: 1920px; }
+
+.single-format-video .entry-content {
+  margin-top: 0; }
+  .single-format-video .entry-content .entry-title {
+    margin-top: 0; }
 
 @media (min-width: 768px) {
   #primary {

@@ -10,8 +10,16 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'template/content', 'single' ); ?>
+			
+			<?php 
+				$postCat = getPostCat();
+				if ($postCat == 'artikel') {
+					get_template_part( 'template/content', 'single' ); 
+				} elseif ($postCat == 'video') {
+					get_template_part( 'template/content', 'video' ); 
+				}
+				
+			?>
 	
 			<?php //dazzling_post_nav(); ?>
 			

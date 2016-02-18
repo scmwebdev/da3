@@ -6,22 +6,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
-		<div class="banner">
-			<?php the_post_thumbnail('featuredImage_desktop'); ?>
-		</div>
-		<div class="container">
-			<h1 class="entry-title "><?php the_title(); ?></h1>
-
-			<div class="entry-meta">
-				<?php //dazzling_posted_on(); ?>
-				<?php the_date(); ?>
-			</div><!-- .entry-meta -->
-		</div>
-
-	</header><!-- .entry-header -->
-
-	<div class="entry-content container">
+		<div class="container"><h1 class="entry-title "><?php the_title(); ?></h1></div>
 		<?php the_content(); ?>
+	</header><!-- .entry-header -->
+	<div class="entry-content">
 		<?php
 			wp_link_pages( array(
 				'before'            => '<div class="page-links">'.__( 'Pages:', 'dazzling' ),

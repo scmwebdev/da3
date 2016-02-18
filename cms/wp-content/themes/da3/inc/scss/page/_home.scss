@@ -12,6 +12,18 @@
     color: #fff;
 }
 
+.da3-home .video {
+    @include spacepad(15px);
+    &:hover {
+        background-color: darken($main-color, 5%);
+    }
+    &-title {
+        padding-top: 5px;
+        color: #fff;
+        text-decoration: none !important;
+    }
+}
+
 .da3 {
     &-home {
         #content {
@@ -24,7 +36,9 @@
             background-color: $main-color;
             color: #fff;
             position: relative;
-            @include spacepad(4em);
+            @include breakpoint('sm') {
+                @include spacepad(4em);
+            }
         }
         .content-segment {
             .gallery-post-title {
@@ -60,6 +74,14 @@
     }
 }
 
+.gallery-instagram{
+    #sbi_load {
+        text-align: right !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 .video-audisi {
     @include spacepad(15px);
     position: relative;
@@ -89,11 +111,11 @@
     @include breakpoint('xs') {
         .post-title,
         .post-excerpt {
-            text-align: center;
+            text-align: left;
         }
         .post-thumb {
             margin: 10px 0;
-            text-align: center;
+            text-align: left;
         }
     }
     .gem {
@@ -117,6 +139,7 @@
     }
     .post-link {
         margin-top: 2em;
+        margin-bottom: 2em;
     }
 }
 
