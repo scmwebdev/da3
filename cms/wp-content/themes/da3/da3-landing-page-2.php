@@ -39,6 +39,11 @@
 							endwhile;
 							wp_reset_query();
 						?>
+						<div class="col-xs-12 spacepad text-right">
+							<a href="<?php echo site_url(); ?>/video">
+								<button type="button" class="btn btn-primary">Pergi ke Video</button>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -52,14 +57,14 @@
 						}
 					?>
 				</div>
-				<div class="gallery-instagram">
+				<div class="gallery-instagram spacepad">
 					<?php
 						$postId = 206;
 						$getPost = get_post($postId);
 						echo apply_filters('the_content', $getPost->post_content);
 					?>
 					<div class="container text-right">
-						<a href="<?php echo site_url(); ?>/galeri"><button type="button" class="btn btn-primary">pergi ke galeri</button>
+						<a href="<?php echo site_url(); ?>/galeri"><button type="button" class="btn btn-primary">Pergi ke galeri</button>
 						</a>
 					</div>
 					

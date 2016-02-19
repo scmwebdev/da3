@@ -1,4 +1,14 @@
 /* ===========================================
- * Petarung Buttons
+ * dangdut academy 3 Buttons
  * ===========================================*/
 
+.da3 {
+    .btn-primary {
+        background-color: $third-color;
+        border-color: lighten($third-color, 5%);
+        &:hover {
+            background-color: darken($third-color, 10%);
+            border-color: darken($third-color, 10%);
+        }
+    }
+}

@@ -8665,6 +8665,16 @@ html * {
 .navbar {
   margin-bottom: 0; }
 
+/* ===========================================
+ * dangdut academy 3 Buttons
+ * ===========================================*/
+.da3 .btn-primary {
+  background-color: #a01090;
+  border-color: #b712a5; }
+  .da3 .btn-primary:hover {
+    background-color: #720b66;
+    border-color: #720b66; }
+
 /* change the footer background color */
 #footer-area,
 #colophon {
