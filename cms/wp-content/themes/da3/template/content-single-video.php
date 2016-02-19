@@ -4,14 +4,12 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(array('col-xs-12 col-sm-4')); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
-		<a target="_blank" href="<?php echo get_permalink(); ?>">
-			<?php the_post_thumbnail(); ?>
-		</a>
+		<div class="container"><h1 class="entry-title "><?php the_title(); ?></h1></div>
+		<?php the_content(); ?>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
-		<p class="bold"><?php the_title(); ?></p>
 		<?php
 			wp_link_pages( array(
 				'before'            => '<div class="page-links">'.__( 'Pages:', 'dazzling' ),

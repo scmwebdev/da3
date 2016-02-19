@@ -20,16 +20,13 @@
 				</div>
 			</div>
 			<div class="content-segment video-audisi">
-				<div class="video-audisi-title">
-					<?php 
-						if (wp_is_mobile()) {
-							echo '<h2 class="text-center bold">Di balik audisi D\'Academy 3</h2>';
-						} else {
-							echo '<img class="img-responsive" src="'. get_stylesheet_directory_uri() .'/inc/img/da3_title_videoaudisi.png">';
-						}
-					?>
+				<div class="container">
+						<div class="page-title">
+						<h2 class="title">Video</h2>
+					</div>
 				</div>
-				<div class="video-audisi-vid spacepad spacemar clearfix">
+				
+				<div class="video-audisi-vid clearfix">
 					<div class="container">
 						<?php 
 							$args = 'category_name=video&showposts=3';
@@ -48,14 +45,10 @@
 				</div>
 			</div>
 			<div class="content-segment gallery-post">
-				<div class="gallery-post-title">
-					<?php 
-						if (wp_is_mobile()) {
-							echo '<h2 class="text-center bold">Gallery Photo</h2>';
-						} else {
-							echo '<img class="img-responsive" src="'. get_stylesheet_directory_uri() .'/inc/img/da3_title_galleri.jpg">';
-						}
-					?>
+				<div class="container">
+						<div class="page-title">
+						<h2 class="title">Galeri</h2>
+					</div>
 				</div>
 				<div class="gallery-instagram spacepad">
 					<?php

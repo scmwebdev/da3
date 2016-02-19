@@ -105,6 +105,12 @@
             @extend .hide-xs;
         }
     }
+    &-vid {
+        @include spacepad(15px);
+        @include breakpoint('sm') {
+            @include spacemar(15px);
+        }
+    }
 }
 
 .da3-home .latest-post {

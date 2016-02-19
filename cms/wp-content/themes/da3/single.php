@@ -16,7 +16,7 @@ get_header(); ?>
 				if ($postCat == 'artikel') {
 					get_template_part( 'template/content', 'single' ); 
 				} elseif ($postCat == 'video') {
-					get_template_part( 'template/content', 'video' ); 
+					get_template_part( 'template/content', 'single-video' ); 
 				}
 				
 			?>

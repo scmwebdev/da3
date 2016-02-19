@@ -1,0 +1,63 @@
+/* ===========================================
+ *  Page Title Styling
+ * ===========================================*/
+
+.da3 {
+    .page-title {
+        text-align: right;
+        display: inline-block;
+        position: relative;
+        > .title {
+            background: $third-color;
+            padding-left: 1.5em;
+            text-transform: capitalize;
+            @include breakpoint('xs') {
+                padding-left: 2em;
+            }
+            padding-right: 0.5em;
+            margin: 0;
+            @extend .spacepad;
+            color: #fff;
+            font-weight: 700;
+        }
+        &:after {
+            content: '';
+            width: 20px;
+            height: 100%;
+            background: darken($third-color, 15%);
+            float: right;
+            position: absolute;
+            top: 0;
+        }
+    }
+    &-home {
+        .video-audisi {
+            @include breakpoint('sm') {
+                // set min height on the title container to push the video down
+                > .container:first-child {
+                    min-height: 7em;
+                }
+                .page-title {
+                    @extend .page-title;
+                    position: absolute;
+                    font-size: 2em;
+                    right: -20px;
+                }
+            }
+        }
+        .gallery-post {
+            @include breakpoint('sm') {
+                // set min height on the title container to push the video down
+                > .container:first-child {
+                    min-height: 7em;
+                }
+                .page-title {
+                    @extend .page-title;
+                    position: absolute;
+                    font-size: 2em;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}

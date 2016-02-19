@@ -8468,7 +8468,7 @@ ul.nodots > li {
 .inline {
   display: inline; }
 
-.spacepad, .da3-juri .item .item-list, .page-template-da3-content-page .page-title > h1 {
+.spacepad, .da3 .page-title > .title, .da3 .da3-home .video-audisi .page-title > .title, .da3 .da3-home .gallery-post .page-title > .title, .da3-juri .item .item-list {
   padding-top: 20px;
   padding-bottom: 20px; }
 
@@ -8675,6 +8675,49 @@ html * {
     background-color: #720b66;
     border-color: #720b66; }
 
+/* ===========================================
+ *  Page Title Styling
+ * ===========================================*/
+.da3 .page-title, .da3 .da3-home .video-audisi .page-title, .da3-home .video-audisi .da3 .page-title, .da3 .da3-home .gallery-post .page-title, .da3-home .gallery-post .da3 .page-title {
+  text-align: right;
+  display: inline-block;
+  position: relative; }
+  .da3 .page-title > .title, .da3 .da3-home .video-audisi .page-title > .title, .da3 .da3-home .gallery-post .page-title > .title {
+    background: #a01090;
+    padding-left: 1.5em;
+    text-transform: capitalize;
+    padding-right: 0.5em;
+    margin: 0;
+    color: #fff;
+    font-weight: 700; }
+    @media (max-width: 767px) {
+      .da3 .page-title > .title, .da3 .da3-home .video-audisi .page-title > .title, .da3 .da3-home .gallery-post .page-title > .title {
+        padding-left: 2em; } }
+  .da3 .page-title:after, .da3 .da3-home .video-audisi .page-title:after, .da3-home .video-audisi .da3 .page-title:after, .da3 .da3-home .gallery-post .page-title:after, .da3-home .gallery-post .da3 .page-title:after {
+    content: '';
+    width: 20px;
+    height: 100%;
+    background: #5a0951;
+    float: right;
+    position: absolute;
+    top: 0; }
+
+@media (min-width: 768px) {
+  .da3-home .video-audisi > .container:first-child {
+    min-height: 7em; }
+  .da3-home .video-audisi .page-title {
+    position: absolute;
+    font-size: 2em;
+    right: -20px; } }
+
+@media (min-width: 768px) {
+  .da3-home .gallery-post > .container:first-child {
+    min-height: 7em; }
+  .da3-home .gallery-post .page-title {
+    position: absolute;
+    font-size: 2em;
+    left: -20px; } }
+
 /* change the footer background color */
 #footer-area,
 #colophon {
@@ -8854,6 +8897,13 @@ html * {
       left: -3em;
       max-width: 150px;
       top: 4em; } }
+  .video-audisi-vid {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    @media (min-width: 768px) {
+      .video-audisi-vid {
+        margin-top: 15px;
+        margin-bottom: 15px; } }
 
 .da3-home .latest-post {
   text-align: right; }
@@ -8995,19 +9045,18 @@ html * {
   .single-format-video .entry-content .entry-title {
     margin-top: 0; }
 
+.da3-video .entry-header {
+  margin-bottom: .5em;
+  padding-bottom: 0; }
+
+.da3-video .entry-content {
+  margin-top: 0; }
+  .da3-video .entry-content .entry-title {
+    margin-top: 0; }
+
 @media (min-width: 768px) {
   #primary {
     margin-bottom: 2em; } }
 
 .page-template-da3-content-page #content {
   margin-top: 0; }
-
-.page-template-da3-content-page .page-title {
-  background: #a01090;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
-  text-align: center; }
-  .page-template-da3-content-page .page-title > h1 {
-    margin: 0;
-    color: #fff;
-    font-weight: 700; }
