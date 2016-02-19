@@ -10,7 +10,9 @@
 get_header(); ?>
 	<div id="primary" class="content-area col-sm-12 col-md-12">
 		<main id="main" class="site-main" role="main">
-
+			<div class="page-title">
+				<h1 class="title"><?php the_title(); ?></h1>
+			</div>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>

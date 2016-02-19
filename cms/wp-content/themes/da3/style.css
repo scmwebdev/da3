@@ -8907,6 +8907,8 @@ html * {
 
 .da3-home .latest-post {
   text-align: right; }
+  .da3-home .latest-post .post-title {
+    text-transform: capitalize; }
   @media (max-width: 767px) {
     .da3-home .latest-post .post-title,
     .da3-home .latest-post .post-excerpt {

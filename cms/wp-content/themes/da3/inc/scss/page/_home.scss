@@ -115,6 +115,9 @@
 
 .da3-home .latest-post {
     text-align: right;
+    .post-title {
+        text-transform: capitalize;
+    }
     @include breakpoint('xs') {
         .post-title,
         .post-excerpt {

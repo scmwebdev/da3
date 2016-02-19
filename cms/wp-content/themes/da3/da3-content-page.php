@@ -20,6 +20,8 @@
 					endwhile;
 					wp_reset_query();
 				?>
+				
+<?php echo paginate_links( $args ); ?>
 		    </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
